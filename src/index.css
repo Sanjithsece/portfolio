@@ -1,0 +1,265 @@
+/* --- User's Provided Base CSS --- */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  width: 100%; /* Ensure body takes full width */
+}
+
+/* Make sure the root element for React also takes full width */
+#root {
+  width: 100%;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+/* --- End of User's CSS --- */
+
+
+/* --- New Styles for Portfolio --- */
+
+/* Main App Container */
+.app-container {
+  width: 100%;
+  max-width: 1200px; /* Constrains content width on large screens */
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box; /* Includes padding in the width calculation */
+}
+
+/* Projects List Styles */
+.projects-container {
+  width: 100%;
+}
+
+.projects-container h2 {
+  font-size: 2.5em;
+  border-bottom: 2px solid #646cff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: white; /* Explicitly set color for dark mode */
+}
+
+.projects-grid {
+  display: grid;
+  /* Creates a responsive grid that fits as many columns as possible */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid #333;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Lifts the card on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-color: #646cff; /* Highlights the card */
+}
+
+.project-card h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #646cff;
+}
+
+.project-card p {
+  font-size: 1em;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* Tag Styles */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tag, .tag-sm {
+  border-radius: 20px;
+  padding: 0.25em 0.75em;
+  font-size: 0.9em;
+  background-color: #333;
+  color: #eee;
+}
+
+.tag-sm {
+  font-size: 0.8em;
+  background-color: #2a2a2a;
+}
+
+
+/* Project Detail Page Styles */
+.project-detail-container {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  /* Simple fade-in animation for the new "page" */
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.back-button {
+  font-size: 1em;
+  font-weight: 500;
+  color: #646cff;
+  background-color: transparent;
+  border: 1px solid #646cff;
+  padding: 0.5em 1em;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.back-button:hover {
+  background-color: #646cff;
+  color: #ffffff;
+}
+
+.project-detail-container h1 {
+  font-size: 3em;
+  color: #646cff;
+  margin-bottom: 1rem;
+}
+
+.project-detail-description {
+  font-size: 1.2em;
+  line-height: 1.7;
+  max-width: 800px; /* Makes long text easier to read */
+  margin-bottom: 2rem;
+}
+
+.github-link {
+  display: inline-block;
+  font-size: 1.1em;
+  background-color: #646cff;
+  color: #ffffff;
+  padding: 0.75em 1.5em;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 2rem;
+  transition: background-color 0.25s;
+}
+
+.github-link:hover {
+  background-color: #535bf2;
+  color: #ffffff; /* Ensure text stays white */
+}
+
+/* Light Mode Specific Overrides */
+@media (prefers-color-scheme: light) {
+  .projects-container h2 {
+    color: #213547; /* Adjust heading color for light mode */
+  }
+
+  .project-card {
+    background-color: #f9f9f9;
+    border-color: #ddd;
+  }
+
+  .tag, .tag-sm {
+    background-color: #eee;
+    color: #333;
+  }
+
+  .tag-sm {
+    background-color: #f0f0f0;
+  }
+
+  .back-button {
+    color: #747bff;
+    border-color: #747bff;
+  }
+
+  .back-button:hover {
+    background-color: #747bff;
+    color: #ffffff;
+  }
+
+  .github-link {
+    background-color: #747bff;
+  }
+  
+  .github-link:hover {
+    background-color: #646cff;
+  }
+}
+
+/* Fade-in Animation Definition */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
