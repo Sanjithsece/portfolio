@@ -1,4 +1,4 @@
-// src/components/Skills.jsx
+
 import React from 'react';
 import { userData } from '../data/userData';
 

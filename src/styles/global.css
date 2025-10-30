@@ -1,7 +1,5 @@
-/* === GOOGLE FONTS === */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/* === CSS VARIABLES - LIGHT MODE (Default) === */
 :root {
   /* Colors */
  --bg-color: #FDF5E6; /* CHANGED: A slightly warmer, 'Old Lace' color */

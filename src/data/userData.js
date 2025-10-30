@@ -26,32 +26,7 @@ export const userData = {
 
   resume: resumeFile,
 
-  projects: [
-    {
-      title: "MoneyBridge",
-      description: "Full-stack web app for peer-to-peer exchange of UPI and physical cash. Features secure JWT authentication, request handling, and notifications.",
-      tags: ["Spring Boot", "React.js", "JWT", "REST APIs"],
-      githubLink: "https://github.com/Sanjithsece",
-    },
-    {
-      title: "Foodie App",
-      description: "Full-stack food ordering platform with menu browsing, cart, and order tracking features. Deployed on Vercel.",
-      tags: ["MongoDB", "Express.js", "React.js", "Node.js"],
-      githubLink: "https://github.com/Sanjithsece",
-    },
-    {
-      title: "Trip Planner",
-      description: "Console-based Python app that generates optimized travel itineraries and route suggestions.",
-      tags: ["Python"],
-      githubLink: "https://github.com/Sanjithsece",
-    },
-    {
-      title: "Smart Blind Stick – IoT-Based Assistive Technology",
-      description: "IoT device for visually impaired individuals using ultrasonic sensors, GPS, and vibration feedback for obstacle detection and navigation.",
-      tags: ["IoT", "Arduino", "Sensors", "Embedded Systems"],
-      githubLink: "https://github.com/Sanjithsece",
-    },
-  ],
+ 
 
   education: [
     {

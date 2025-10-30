@@ -19,14 +19,14 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_wssn9d8',      // ✅ Your Service ID
-        'template_ojgverq',     // ✅ Your Template ID
+        'service_wssn9d8',     
+        'template_ojgverq',     
         {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
         },
-        '93w7Sw4tdlOjcDJbo'     // ✅ Your Public Key
+        '93w7Sw4tdlOjcDJbo'     
       )
       .then(() => {
         alert('Message sent successfully!');

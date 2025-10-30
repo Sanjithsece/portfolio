@@ -1,4 +1,4 @@
-// src/components/Navbar.jsx
+
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes, FaSun, FaMoon } from 'react-icons/fa';
 import { userData } from '../data/userData';
@@ -6,9 +6,9 @@ import { userData } from '../data/userData';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [theme, setTheme] = useState(() => {
-    // Initialize theme from localStorage or default to 'light'
+
     const savedTheme = localStorage.getItem('theme');
-    // Also check for user's system preference
+   
     const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     return savedTheme ? savedTheme : (userPrefersDark ? 'dark' : 'light');
   });
@@ -19,9 +19,9 @@ const Navbar = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
 
-  // Apply theme class to body and save to localStorage
+ 
   useEffect(() => {
-    // FIXED: Changed 'dark-theme' to 'dark-mode' to match the CSS file
+
     document.body.className = theme === 'dark' ? 'dark-mode' : '';
     localStorage.setItem('theme', theme);
   }, [theme]);

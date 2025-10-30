@@ -1,4 +1,4 @@
-// src/components/Footer.jsx
+
 import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { userData } from '../data/userData';
