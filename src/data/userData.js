@@ -52,5 +52,50 @@ export const userData = {
     "JavaScript", "React.js", "Node.js", "Express.js", "Spring Boot", "Java",
     "MongoDB", "MySQL", "HTML", "CSS", "C++", "Python", "Git", "Postman",
   ],
+
+  projects: [
+    {
+      title: "Blood Donation Platform",
+      description: "Geo-aware blood donation platform with donor and hospital flows, emergency request handling, and responsive full-stack web interfaces.",
+      tags: ["MongoDB", "Express.js", "React.js", "Node.js"],
+      githubLink: "https://github.com/Sanjithsece/blood-donation-",
+    },
+    {
+      title: "MoneyProject",
+      description: "Finance-focused project repository for budgeting and money management workflows. The public repository currently exists but is still empty.",
+      tags: ["Finance", "Planning", "Web App"],
+      githubLink: "https://github.com/Sanjithsece/MoneyProject-",
+    },
+    {
+      title: "Power BI Dashboard",
+      description: "Data visualization project built in Power BI for interactive reporting and analytics workflows using `.pbix` assets.",
+      tags: ["Power BI", "Data Analytics", "Dashboarding"],
+      githubLink: "https://github.com/Sanjithsece/powerbi",
+    },
+    {
+      title: "Smart Signal Control",
+      description: "Traffic signal optimization project focused on smarter control logic for improving road flow and emergency responsiveness.",
+      tags: ["IoT", "Automation", "Traffic Systems"],
+      githubLink: "https://github.com/Sanjithsece",
+    },
+    {
+      title: "Smart Fridge",
+      description: "Frontend project for a smart-fridge experience built with React and Vite to manage food-related interactions in a responsive UI.",
+      tags: ["React.js", "Vite", "Frontend"],
+      githubLink: "https://github.com/Sanjithsece/Smart-fridge",
+    },
+    {
+      title: "Tic Tac Toe",
+      description: "Interactive tic-tac-toe web app with a separate frontend repository and a simple game-focused user experience.",
+      tags: ["React.js", "Vite", "Game UI"],
+      githubLink: "https://github.com/Sanjithsece/tic-tac-toe-frontend",
+    },
+    {
+      title: "Virtual Try-On",
+      description: "Virtual clothing try-on interface project. I mapped this to the closest public repository available under your GitHub profile.",
+      tags: ["React.js", "Fashion Tech", "Frontend"],
+      githubLink: "https://github.com/Sanjithsece/shirtfrontend-",
+    },
+  ],
 };
   
